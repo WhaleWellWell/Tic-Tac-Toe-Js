@@ -2,12 +2,12 @@ const X = "X";
 const O = "O";
 let turn = X; // Player that starts the game
 
-const subheader = document.getElementsByClassName("subheader");
+const currentTurn = document.getElementsByClassName("currentTurn");
 
 
 // Button Click Handlers:
 
-//! There is most likely a better way to do this.
+//! There is most likely a better way to select elements.
 const btn1 = document.getElementsByClassName("btn-1")
 const btn2 = document.getElementsByClassName("btn-2")
 const btn3 = document.getElementsByClassName("btn-3")
@@ -18,7 +18,7 @@ const btn7 = document.getElementsByClassName("btn-7")
 const btn8 = document.getElementsByClassName("btn-8")
 const btn9 = document.getElementsByClassName("btn-9")
 
-const allButtons = [btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9]
+const allButtons = [btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9] // All buttons
 
 allButtons.forEach(element => {
   element.addEventListener('click', handleBtnClick); 
@@ -35,6 +35,7 @@ function handleBtnClick (btn) {
     // TODO: Make some way to tell the player that they messed up
   };
 
+  currentTurn.innerHTML = turn;
   if (turn === X) {
     turn = O;
   } else {
