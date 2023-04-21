@@ -1,5 +1,5 @@
 body {
-  padding-top: 5%;
+  padding-top: 1%;
   background-color: #282828;
   color: gray;
   text-align: center;
@@ -7,13 +7,13 @@ body {
 }
 
 .header {
-  font-size: 7.5vw;
+  font-size: 6vw;
   padding: 0%;
   margin: 0%;
 }
 
 .subheader {
-  font-size: 56px;
+  font-size: 50px;
   padding: 0%;
   margin: 0%;
 }

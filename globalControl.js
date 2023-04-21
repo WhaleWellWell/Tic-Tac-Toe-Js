@@ -1,1 +1,0 @@
-document.getElementsByClassName("btn").innerHTML = "X";
